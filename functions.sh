@@ -4,7 +4,7 @@
 
 USERID=$(id -u)
 
-if[ USERID -ne 0 ]
+if [ USERID -ne 0 ]
 
 then 
     echo "ERROR: please run the script with root user"
@@ -18,7 +18,7 @@ fi
 #validaiong function 
 
 VALIDATE(){
-    if[$1 -ne 0]
+    if [$1 -ne 0]
     then 
         echo "$2 insalled is success"
     else
@@ -34,7 +34,7 @@ VALIDATE(){
 
 dnf installed mysql
 
-if[$? -ne 0]
+if [$? -ne 0]
 then    
     echo "mysql is not installed"
     dnf install mysql -y
@@ -47,11 +47,10 @@ fi
 
 dnf installed python3
 
-if[$? -ne 0]
+if [$? -ne 0]
 then    
     echo "python3 is not installed"
     dnf install python3 -y
-    if[$? -ne 0]
     Validate $? "python3"
 else
     echo "python3 is already  installed"   
@@ -61,11 +60,10 @@ fi
 
 dnf installed nginx
 
-if[$? -ne 0]
+if [$? -ne 0]
 then    
     echo "nginx is not installed"
     dnf install nginx -y
-    if[$? -ne 0]
      Validate $? "nginx"
 else
     echo "nginx is already  installed"   
