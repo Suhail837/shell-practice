@@ -30,7 +30,7 @@ VALIDATE(){
 
 # checking whether mysql is installwed or not 
 
-dnf install mysql
+dnf list installed mysql
 
 if [$? -ne 0]
 then    
@@ -43,7 +43,7 @@ fi
 
 # checking whether pyhtonpyhton is installwed or not 
 
-dnf install python3
+dnf list installed python3
 
 if [$? -ne 0]
 then    
@@ -56,7 +56,7 @@ fi
 
 # checking whether nginx is installwed or not 
 
-dnf install nginx
+dnf list installed nginx
 
 if [$? -ne 0]
 then    
