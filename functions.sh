@@ -25,14 +25,12 @@ VALIDATE(){
         echo "$2 insalled is failed"
         exit 1
     fi
-    
-    
-    
+     
     }
 
 # checking whether mysql is installwed or not 
 
-dnf installed mysql
+dnf install mysql
 
 if [$? -ne 0]
 then    
@@ -45,7 +43,7 @@ fi
 
 # checking whether pyhtonpyhton is installwed or not 
 
-dnf installed python3
+dnf install python3
 
 if [$? -ne 0]
 then    
@@ -58,7 +56,7 @@ fi
 
 # checking whether nginx is installwed or not 
 
-dnf installed nginx
+dnf install nginx
 
 if [$? -ne 0]
 then    
