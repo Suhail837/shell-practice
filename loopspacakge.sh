@@ -4,7 +4,7 @@
 
 USERID=$(id -u)
 
-PACKAGES=("mysql" "python" "nginx" "https") # storing it in variables 
+PACKAGES=("mysql" "python" "nginx" "httpd") # storing it in variables 
 
 if [ USERID -ne 0 ]
 
