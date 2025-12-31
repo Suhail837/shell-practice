@@ -39,7 +39,7 @@ do
         dnf install $pacakge  -y
         Validate $? "$pacakge "
     else
-        echo "$pacakge  is already  installed"   
+        echo -e  "$pacakge  is already  installed"   
     fi
 done
 
